@@ -58,7 +58,7 @@ options.add_argument("no-sandbox")
 options.add_argument("--disable-extensions")
 options.add_argument("--headless")
 
-driver = webdriver.Chrome(executable_path='/Users/maisamshah/Desktop/Scraper/chromedriver', options=options) # CHANGE PATH
+driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>', options=options) # CHANGE PATH
 driver.wait = WebDriverWait(driver, 10)
 
 try:

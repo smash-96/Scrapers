@@ -59,7 +59,7 @@ url = "https://healthatlas.gov.gr/HealthCare#!/"
 options=webdriver.ChromeOptions()
 options.add_argument("no-sandbox")
 options.add_argument("--disable-extensions")
-driver = webdriver.Chrome(executable_path='/home/smash/Downloads/chromedriver',chrome_options=options)
+driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>',chrome_options=options)
 driver.implicitly_wait(10)
 driver.get(url)
 gk=driver.find_element_by_xpath('//*[@id="culture-en-US"]')

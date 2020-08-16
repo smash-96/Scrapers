@@ -20,7 +20,7 @@ def run_queries(con):
 if __name__ == "__main__":
 
     print("Press::\n\t1. To initialize Base Tables\n\t2. Scrap Data\n")
-    url = "https://www.bedetheque.com/bandes_dessinees_M.html"
+    url = "https://www.bedetheque.com/bandes_dessinees_A.html"
     choice=int(input())
     if choice==1:
         db = MysqlDb()

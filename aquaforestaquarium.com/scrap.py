@@ -51,7 +51,7 @@ options.add_argument("no-sandbox")
 options.add_argument("--disable-extensions")
 #options.add_argument("--headless")
 
-driver = webdriver.Chrome(executable_path='/home/smash/Desktop/amazon/chromedriver',chrome_options=options) # CHANGE PATH
+driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>',chrome_options=options) # CHANGE PATH
 driver.wait = WebDriverWait(driver, 10)
 urls=[
         'https://aquaforestaquarium.com/collections/lighting-system',

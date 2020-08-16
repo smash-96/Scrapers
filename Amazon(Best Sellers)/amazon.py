@@ -43,7 +43,7 @@ options.add_argument("--disable-extensions")
 # Replace url to scrape other best sellers
 url = 'https://www.amazon.com/Best-Sellers-Camera-Photo-Camcorders/zgbs/photo/172421/ref=zg_bs_nav_p_1_p'
 
-driver = webdriver.Chrome(executable_path='/Users/maisamshah/Downloads/chromedriver', options=options) # CHANGE PATH
+driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>', options=options) # CHANGE PATH
 driver.wait = WebDriverWait(driver, 10)
 
 

@@ -61,7 +61,7 @@ def scrap():
     options.add_argument("no-sandbox")
     #options.add_argument("--headless")
     options.add_argument("--disable-extensions")
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>',chrome_options=options)
     driver.get(url)
 
     time.sleep(2)

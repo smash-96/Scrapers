@@ -15,6 +15,6 @@ class MysqlDb:
         options.add_argument("no-sandbox")
         options.add_argument("--disable-extensions")
         #options.add_argument("--headless")
-        driver = webdriver.Chrome(executable_path='/home/smash/Desktop/amazon/chromedriver',chrome_options=options)
+        driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>',chrome_options=options)
         driver.wait = WebDriverWait(driver, 0)
         return driver

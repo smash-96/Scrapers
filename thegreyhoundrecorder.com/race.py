@@ -33,7 +33,7 @@ options.add_argument("--disable-extensions")
 #options.add_argument("--headless")
 
 
-driver = webdriver.Chrome(executable_path='/Users/maisamshah/Downloads/chromedriver', options=options) # CHANGE PATH
+driver = webdriver.Chrome(executable_path='<Add Path to your chromedriver>', options=options) # CHANGE PATH
 driver.wait = WebDriverWait(driver, 10)
 
 filename = 'race' # Enter file name here in which you want to store the data
