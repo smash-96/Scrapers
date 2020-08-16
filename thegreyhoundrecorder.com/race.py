@@ -86,7 +86,7 @@ try:
                             s_split = ''
                         write(d_date, track, name, t_time, mgn, s_split, filename)
                 except:
-                    print(t_time, s_split, "Error")
+                    pass
 
             j += 1
 
