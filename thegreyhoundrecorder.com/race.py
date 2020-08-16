@@ -11,7 +11,7 @@ import csv
 
 
 def write(Date, Track, Name, t_Time, MGN, s_Split, fn):
-
+    
     data=[]
     data.append(str(Date))
     data.append(str(Track))
@@ -79,9 +79,14 @@ try:
                     mgn = driver.find_element_by_xpath('//*[@id="race-'+str(j)+'"]/table[2]/tbody/tr['+str(k)+']/td[6]').text
                     s_split = driver.find_element_by_xpath('//*[@id="race-'+str(j)+'"]/table[2]/tbody/tr['+str(k)+']/td[7]').text
                     if t_time != '' and mgn != '' and s_split != '':
+
+                        if t_time == '0.00':
+                            t_time = ''
+                        if s_split == '0.00':
+                            s_split = ''
                         write(d_date, track, name, t_time, mgn, s_split, filename)
                 except:
-                    pass
+                    print(t_time, s_split, "Error")
 
             j += 1
 
